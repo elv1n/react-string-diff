@@ -1,6 +1,6 @@
 {
   "name": "react-string-diff",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,7 +44,9 @@
     "typescript": "^3.9.7"
   },
   "eslintConfig": {
-    "extends": ["elv1n-react"]
+    "extends": [
+      "elv1n-react"
+    ]
   },
   "repository": "git@github.com:elv1n/react-string-diff.git",
   "author": "Elvin Dzhavadov"
