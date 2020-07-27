@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,MACC,aAAc,CACd,WACD,CACA,eACC,YAAa,CACb,UACD","file":"example.2259976e.css","sourceRoot":"..","sourcesContent":["#root {\n\tmargin: 0 auto;\n\twidth: 600px\n}\n#root textarea {\n\theight: 150px;\n\twidth: 100%;\n}\n"]}
