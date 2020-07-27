@@ -40,3 +40,20 @@ jobs:
         run: yarn build
         env:
           CI: true
+
+      - name: Instal example dependencies
+        run: yarn --cwd example
+        env:
+          CI: true
+
+      - name: Build example
+        run: yarn --cwd example build
+        env:
+          CI: true
+
+      - name: Deploy pages 🚀
+        uses: JamesIves/github-pages-deploy-action@3.5.7
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: example/dist
