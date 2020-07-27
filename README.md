@@ -21,7 +21,7 @@ npm i react-string-diff
 | oldValue                  | `string*`       |                                | Old value as string.                                                                                                                     |
 | newValue                  | `string*`       |                                | New value as string.                                                                                                                     |
 | component                 | `elementType`   | `div`                          | The component used for the root node. Either a string to use a HTML element or a component                                               |
-| className                 | `string`        |                                | Css class for a strings div wrapper                                                                                                      |
+| className                 | `string`        |                                | Css class for the root node                                                                                                              |
 | method                    | `DiffMethod`    | `DiffMethod.Chars`             | JsDiff text diff method used for diffing strings. Check out [supported methods](#methods).                                               |
 | styles                    | `DiffStyles`    | `defaultStyles`                | [Overriding styles](#overriding-styles).                                                                                                 |
 
