@@ -2,9 +2,9 @@
 
 Highlight the difference between two string in a React component
 
-<img src="https://badgen.net/bundlephobia/min/react-string-diff" alt="/bundlephobia/min/react-string-diff">
-<img src="https://badgen.net/bundlephobia/minzip/react-string-diff" alt="/bundlephobia/minzip/react-string-diff">
-
+[![NPM](https://img.shields.io/npm/v/react-string-diff.svg)](https://www.npmjs.com/package/react-string-diff)
+[![MIN](https://badgen.net/bundlephobia/min/react-string-diff)](https://bundlephobia.com/result?p=react-string-diff)
+[![MINZIP](https://badgen.net/bundlephobia/minzip/react-string-diff)](https://bundlephobia.com/result?p=react-string-diff)
 ## Install
 
 ```bash

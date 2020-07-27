@@ -47,7 +47,7 @@ jobs:
           CI: true
 
       - name: Build example
-        run: yarn --cwd example build
+        run: yarn --cwd example build --public-url /react-string-diff/
         env:
           CI: true
 
