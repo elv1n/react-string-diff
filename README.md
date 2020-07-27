@@ -1,6 +1,6 @@
 # react-string-diff
 
-Highlight the difference between two string in a React component
+Highlight the difference between two strings in a React component
 
 [![NPM](https://img.shields.io/npm/v/react-string-diff.svg)](https://www.npmjs.com/package/react-string-diff)
 [![MIN](https://badgen.net/bundlephobia/min/react-string-diff)](https://bundlephobia.com/result?p=react-string-diff)
@@ -21,8 +21,8 @@ npm i react-string-diff
 | oldValue                  | `string*`       |                                | Old value as string.                                                                                                                     |
 | newValue                  | `string*`       |                                | New value as string.                                                                                                                     |
 | method                    | `DiffMethod`    | `DiffMethod.Chars`             | JsDiff text diff method used for diffing strings. Check out [supported methods](#methods).                                                |
-| styles                    | `DiffStyles`    | `defaultStyles`                | Switch between `unified` and `split` view.                                                                                                |
-| className                 | `string`        |                                | [Overriding styles](#overriding-styles)                                                                                            |
+| styles                    | `DiffStyles`    | `defaultStyles`                | [Overriding styles](#overriding-styles).                                                                                                |
+| className                 | `string`        |                                | Css class for a strings div wrapper                                                                                            |
 
 
 ## Usage
