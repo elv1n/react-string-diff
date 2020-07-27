@@ -8,7 +8,7 @@ export enum DiffMethod {
   Lines = 'diffLines',
   TrimmedLines = 'diffTrimmedLines',
   Sentences = 'diffSentences',
-  CSS = 'diffCss'
+  CSS = 'diffCss',
 }
 
 type DiffStyles = {
@@ -19,12 +19,12 @@ type DiffStyles = {
 
 const defaultStyle: DiffStyles = {
   added: {
-    backgroundColor: 'lightgreen'
+    backgroundColor: 'lightgreen',
   },
   removed: {
-    backgroundColor: 'salmon'
+    backgroundColor: 'salmon',
   },
-  default: {}
+  default: {},
 };
 
 export type StringDiffProps = {
@@ -33,6 +33,7 @@ export type StringDiffProps = {
   method?: DiffMethod;
   styles?: DiffStyles;
   className?: string;
+  component?: React.ElementType;
 };
 
 export const StringDiff: React.FC<StringDiffProps> = ({
@@ -40,7 +41,8 @@ export const StringDiff: React.FC<StringDiffProps> = ({
   newValue,
   method = DiffMethod.Chars,
   styles = defaultStyle,
-  className
+  className,
+  component: Component = 'div',
 }) => {
   const result = useMemo(() => {
     const diff = Diff[method](oldValue, newValue);
@@ -62,5 +64,5 @@ export const StringDiff: React.FC<StringDiffProps> = ({
       );
     });
   }, [oldValue, newValue, method]);
-  return <div className={className}>{result}</div>;
+  return <Component className={className}>{result}</Component>;
 };
